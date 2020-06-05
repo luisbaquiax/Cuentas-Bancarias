@@ -13,29 +13,6 @@ public class Cliente extends Persona {
 
     private Cuenta[] cuentas;
 
-    public Cliente(String nombre,
-            String cui) {
-        super(nombre, cui);
-        cuentas = new Cuenta[10];
-    }
-
-    void solicitarDinero(int numeroCuenta,
-            double cantidad,
-            Cajero cajero) {
-        // algoritmo
-    }
-
-    void depositarDinero(int numeroCuenta,
-            double cantidad,
-            Cajero cajero) {
-        // algoritmo
-    }
-
-    public Cuenta[] obtenerCuentas() {
-        return this.cuentas;
-    }
-
-    @Override
     public void mostrarDatos() {
         super.mostrarDatos();
         for (Cuenta cuenta : cuentas) {
